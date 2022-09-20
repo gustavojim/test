@@ -54,3 +54,33 @@ border-radius: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+
+.grid-container {
+    display: grid;
+    gap: 10px;
+    height: 100vh;
+    grid-template-areas:
+    'header header header header header header'
+    'menu main main main main main'
+    'menu footer footer footer footer footer'
+    ;
+}
+
+.grid-item-header {
+    grid-area: header; 
+    background-color: crimson;
+
+}
+.grid-item-menu {
+    grid-area: menu; 
+    background-color: rgb(20, 220, 87);
+}
+.grid-item-main {
+    grid-area: main; 
+    background-color: rgb(77, 20, 220);
+}
+.grid-item-footer {
+    grid-area: footer; 
+    background-color: rgb(200, 220, 20);
+}
