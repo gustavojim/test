@@ -1,86 +1,174 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700');
 
-.body {
-margin: 0px;
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 100vh;
 }
 
-:root{
-    --main-bg-color:red;
+.header {
+    font-family: Arial;
+    margin-top: 0%; 
+    display: flex;
+    flex-direction:initial;
+    justify-content:space-between;
+    align-items:center;
+    padding-bottom: 200px;
+    background-image:url(./Images/fondo.jpeg);
+    background-size: cover;
+    margin: 0px;
 }
 
-.relativa {
-position: relative;
-margin: 30px;
-width: 300px;
-height: 300px;
-background-color: blue;
-
+.header-logo {
+    display: flex;
 }
 
-.relativa:hover {
-width: 50%;
-background-color: aqua;
-border-radius: 50%;
+#menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.absoluta {
-    top: 10px;
-    position: absolute;
-    left:30px;
-    width: 80%;
-    height: 10%;
-    background-color: rgb(255, 27, 198);
-    border-bottom-style: ridge;
-    border-bottom-color: black;
-    }
-
-.bottom {
-    position: absolute;
-    bottom: 10px;
-    left: 30px;
-    width: 80%;
-    height:10%;
-    background-color: rgb(255, 225, 0);
-    border-top-style: ridge;
-    border-top-color: black;
+#menu ul {
+    display: flex;
+    margin: 0;
 }
 
-.icono {
-    color: rgb(255, 255, 255);
-    font-size: 50px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.li {
+    list-style: none;
+    padding: 0 10px;
+    font-size: 13px;
 }
 
+a {
+    font-family: "Arial";
+    outline: none;
+    text-decoration:none;
+    padding: 2px 1px 0;
+  }
+  
+  a:link {
+    color: #8a8a8a;
+  }
+  
+  a:visited {
+    color: #8a8a8a;
+  }
+
+.logo {
+    width: 80px;
+    margin-left: 20px;
+}
+
+#search {
+    width: 300px;
+    border-radius: 7px;
+    border-width: 1px;
+    height: 25px;
+
+}
+.fa fa-search {
+}
+
+#button-sesion {
+    background-color: rgb(47, 47, 255);
+    border-color:rgb(47, 47, 255);
+    border-radius: 7px;
+    border-width: 1px;
+    padding: 5px;
+    color: white;
+}
+
+#button-registro {
+    background-color:white;
+    border-color: white;
+    border-radius: 7px;
+    border-width: 1px;
+    margin-right: 20px;
+    padding: 5px;
+}
 
 .grid-container {
     display: grid;
-    gap: 10px;
     height: 100vh;
-    grid-template-areas:
-    'header header header header header header'
-    'menu main main main main main'
-    'menu footer footer footer footer footer'
-    ;
+    width: 100%;
+    grid-template-columns: 22% 3% 75%;
 }
 
-.grid-item-header {
-    grid-area: header; 
-    background-color: crimson;
+.grid-item-profile {
+    background-color:;
+    display: flex;
+    flex:content;
+    justify-content:center;
+    align-items:flex-start;
+}
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Arial"
+  }
+
+  h1 {
+    font-size: 1em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  h2 {
+    font-size: .8em;
+    text-align: center;
+    line-height: 4em;
+    color: #8a8a8a;
+  }
+
+  .link {
+    font-family: "Arial";
+    height:100px;
+    outline: none;
+    text-decoration:underline;
+    font-style:none;
+    padding: 2px 1px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  #button-seguir {
+    background-color: rgb(47, 47, 255);
+    border-color:rgb(47, 47, 255);
+    border-radius: 50px;
+    border-width: 1px;
+    padding: 7px 100px 7px 100px;
+    color: white;
+    display: flex;
+    justify-content: center;
 }
-.grid-item-menu {
-    grid-area: menu; 
-    background-color: rgb(20, 220, 87);
+
+#button-mensaje {
+    background-color: rgb(238, 238, 238);
+    border-color:rgb(238, 238, 238);
+    border-radius: 50px;
+    border-width: 1px;
+    padding: 7px 100px 7px 100px;
+    color: rgb(47, 47, 255);
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
 }
-.grid-item-main {
-    grid-area: main; 
+
+.selfie {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;   
+}
+
+.grid-item-images {
     background-color: rgb(77, 20, 220);
 }
-.grid-item-footer {
-    grid-area: footer; 
-    background-color: rgb(200, 220, 20);
-}
+
