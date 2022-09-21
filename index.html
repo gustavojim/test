@@ -1,31 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cuadros</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    />
-  </head>
-  <body class="body">
-    <div class="relativa">
-      <div>
-        <i class="fa-solid fa-flag icono"></i>
-      </div>
-      <div class="absoluta"></div>
-      <div class="bottom"></div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cuadros</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+</head>
+
+<div class="header" > 
+  <div class="header-logo"">
+    <div>
+     <img class="logo" src="./Images/Behance-Logo.png" alt="Behance" />
     </div>
-    
-<div class="grid-container">
-  <div class="grid-item-header">Header</div>
-  <div class="grid-item-menu">Menu</div>
-  <div class="grid-item-main">Main</div>
-  <div class="grid-item-footer">Footer</div>
+    <nav id="menu">
+      <ul>
+        <li class="li"><a href="#">Descubrir</a></li>
+        <li class="li"><a href="#">Transmisiones en directo</a></li>
+        <li class="li"><a href="#">Vacantes</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div>
+    <div class="box">
+      <div class="container-1">
+        <span class="icon"><i class="fa fa-search"></i></span>
+        <input type="search" id="search" placeholder="Buscar..." />
+      </div>
+    </div>
+  </div>
+  <div>
+    <button id="button-sesion" type="submit">Iniciar sesión</button>
+    <button id="button-registro" type="submit">Registrarse</button>
+  </div>
 </div>
+
+<div class="grid-container">
+  <div class="grid-item-profile">
+    <aside>
+      <img class="logo" src="./Images/Behance-Logo.png" alt="Behance" />
+      <h1>Gustavo Jiménez</h1>
+      <h2>Arquitecto</h2>
+      <a href="https://www.atelier-fabrique.jp/">www.atelier-fabrique.jp/</a>
+      <button id="button-seguir" type="submit">Seguir</button>
+    </aside>
+
+  </div>
+   <div class="blank"></div>
+  <div class="grid-item-images">Images</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>
