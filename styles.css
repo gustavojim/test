@@ -97,15 +97,17 @@ a {
     display: grid;
     height: 100vh;
     width: 100%;
-    grid-template-columns: 22% 3% 75%;
+    grid-template-columns: 30% 70%;
+    display: flex;
+    align-content: center;
 }
 
 .grid-item-profile {
-    background-color:;
+    background-color:white;
     display: flex;
-    flex:content;
     justify-content:center;
     align-items:flex-start;
+    margin: 30px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -121,11 +123,12 @@ h1, h2, h3, h4, h5, h6 {
   h2 {
     font-size: .8em;
     text-align: center;
-    line-height: 4em;
+    line-height: 1em;
     color: #8a8a8a;
   }
 
   .link {
+    font-size: .8em;
     font-family: "Arial";
     height:100px;
     outline: none;
@@ -136,7 +139,20 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
   }
 
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button-container-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   #button-seguir {
+    width: 200px;
     background-color: rgb(47, 47, 255);
     border-color:rgb(47, 47, 255);
     border-radius: 50px;
@@ -148,27 +164,92 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #button-mensaje {
+    width: 200px;
     background-color: rgb(238, 238, 238);
     border-color:rgb(238, 238, 238);
     border-radius: 50px;
     border-width: 1px;
-    padding: 7px 100px 7px 100px;
     color: rgb(47, 47, 255);
+    padding: 7px 100px 7px 100px;
     display: flex;
     justify-content: center;
     margin-top: 10px;
 }
 
+.selfie-container {
+    display: flex;
+    justify-content: center;
+}
+
 .selfie {
-    margin-top: 50px;
+    margin-top: -60px;
     margin-bottom: 50px;
     width: 80px;
     border-radius: 50%;
     display: flex;
-    justify-content: center;   
+    justify-content: center;  
+    align-items: center; 
 }
 
 .grid-item-images {
-    background-color: rgb(77, 20, 220);
+    background-color: rgb(249, 249, 249);
+    width: 100%;
+    display: grid;
+    justify-content:center;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 33% 33% 33%;
+    align-items:flex-start;
+    margin: 30px;
+    margin-left: 60px;
+    height: 100vh;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    column-gap: 4em;
+    row-gap: 4em;
+    grid-template-areas:
+    "ima ima ima ima";
 }
 
+.a1 {
+    height:300px;
+    background-image:url(./Images/a.png);
+}
+
+.a2 {
+    height:300px;
+    background-image:url(./Images/b.png);
+}
+
+.a3 {
+    height:300px;
+    background-image:url(./Images/c.png);
+}
+
+.a4 {
+    height:300px;
+    background-image:url(./Images/d.png);
+}
+
+.a5 {
+    height:300px;
+    background-image:url(./Images/c.png);
+}
+
+.a6 {
+    height:300px;
+    background-image:url(./Images/f.png);
+}
+
+.a7 {
+    height:300px;
+    background-image:url(./Images/a.png);
+}
+
+.a8 {
+    height:300px;
+    background-image:url(./Images/c.png);
+}
+
+.a9 {
+    height:300px;
+    background-image:url(./Images/e.png);
+}
